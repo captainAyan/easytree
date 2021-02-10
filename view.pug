@@ -1,0 +1,23 @@
+doctype html
+html
+	head
+		meta(charset="utf-8")
+		link(rel="shortcut icon", href="/favicon.ico")
+		link(rel="stylesheet", href="/style.css")
+		meta(name="viewport", content="width=device-width, initial-scale=1, shrink-to-fit=no")
+		meta(name="theme-color", content="#000000")
+		title @#{name}
+	body
+		div.container
+			center
+				if name
+					h1 #{name}
+				if description
+					p #{description}
+				div
+					each val in links
+						div.card
+							a(href="https://"+val.url, target="_blank", title=val.name)
+								img(src="images/" + val.image +".png")
+				footer Powered By 💓 Javascript
+				<div><br>Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>

@@ -1,0 +1,60 @@
+
+* {
+  font-family: roboto;
+  font-weight: 300;
+  color: white;
+}
+
+body {
+  background: #8E2DE2;
+  background: -webkit-linear-gradient(to right, #4A00E0, #8E2DE2);
+  background: linear-gradient(to right, #4A00E0, #8E2DE2);
+}
+
+.container {
+  margin-right: auto;
+  margin-left: auto;
+  padding: 36px;
+}
+
+h1 {
+  font-size: calc(1.375rem + 1.5vw);
+}
+
+.card {
+  margin: 30px 20px;
+  cursor: pointer;
+  display: inline-block;
+
+  background: rgba( 142, 45, 226, 0.25 );
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 4px );
+  -webkit-backdrop-filter: blur( 4px );
+  border-radius: 20px;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+.card img {
+  margin: auto;
+  width: 96px;
+  padding: 36px;
+  float: left;
+}
+
+footer {
+  margin-top: 32px;
+}
+
+@media (max-width: 768px) {
+  .container-md, .container-sm, .container {
+    max-width: 720px;
+    padding: 12px;
+  }
+  .card {
+    margin: 10px 6px;
+  }
+  .card img {
+    width: 52px;
+    padding: 18px ;
+  }
+}

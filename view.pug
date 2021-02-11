@@ -16,8 +16,11 @@ html
 					p #{description}
 				div
 					each val in links
-						div.card
-							a(href="https://"+val.url, target="_blank", title=val.name)
+						
+						a(href="https://"+val.url, target="_blank", title=val.name).btn-link
+							button.btn.btn-primary 
 								img(src="images/" + val.image +".png")
+								span #{val.name}
+
 				footer Powered By 💓 Javascript
 				<div><br>Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>

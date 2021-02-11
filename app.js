@@ -67,3 +67,4 @@ function fn(tag, data) {
 }
 
 
+// http://localhost:3000/?fln=Ayan&des=This%20is%20a%20brief%20description%20about%20myself&fbp=1abcfbm=d&ig=a&fbi=a&lic=ab&tw=e&dc=a&gh=a&fbg=b&li=2&sc=a&sd=dc&me=pp&th=xyz&yti=a&yth=b&pin=z&rd=bz&fbh=a&srd=a&tt=abc&fbp=1

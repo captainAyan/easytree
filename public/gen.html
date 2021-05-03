@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8"/>
+  <link rel="shortcut icon" href="/favicon.ico"/>
+  <link rel="stylesheet" href="/style.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+  <meta name="theme-color" content="#000000" />
+  <title>Generate your EasyTree page</title>
+</head>
+<body>
+  <div class="container">
+    <center>
+      <form id="form">
+
+        <h1>EasyTree 🌴 Generator</h1>
+
+        <fieldset>
+          <legend>Add Accounts</legend>
+          <label for="name">Type:</label>
+          <select id="type">
+            <option value="fbi">Facebook Profile</option>
+            <option value="fbh">Facebook Profile (handle)</option>
+            <option value="fbp">Facebook Page</option>
+            <option value="fbg">Facebook Group</option>
+            <option value="fbm">Facebook Messenger</option>
+            <option value="ig">Instagram</option>
+            <option value="tw">Twitter</option>
+            <option value="dc">Discord Server</option>
+            <option value="gh">Github</option>
+            <option value="li">LinkedIn</option>
+            <option value="lic">LinkedIn Company</option>
+            <option value="sc">Snapchat</option>
+            <option value="sd">Soundcloud</option>
+            <option value="me">Medium</option>
+            <option value="th">Twitch</option>
+            <option value="yti">Youtube</option>
+            <option value="yth">Youtube Handle</option>
+            <option value="pin">Pinterest</option>
+            <option value="rd">Reddit</option>
+            <option value="srd">Subreddit</option>
+            <option value="tt">Tiktok</option>
+
+          </select>
+
+          <label for="data">Data:</label>
+          <input type="text" id="data" >
+
+          <button>Add</button>
+
+          <br>
+          <span id="message"></span>
+        </fieldset>
+
+
+      </form>
+
+      <br><br>
+      <button onclick="getURL()">Get URL</button>
+    </center>
+  </div>
+
+  <script type="text/javascript">
+
+    var list = []
+
+    document.getElementById("form").addEventListener("submit", e => {
+      e.preventDefault();
+
+      if(document.getElementById("data").value != "") {
+        list.push({
+          type: document.getElementById("type").value,
+          data: document.getElementById("data").value
+        });
+      }
+
+      document.getElementById("data").value = "";
+      document.getElementById("message").innerText = `Currently added (${list.length})`;
+
+    })
+
+    function getURL() {
+      console.log("hello world")
+    }
+
+
+  </script>
+  
+
+</body>
+</html>

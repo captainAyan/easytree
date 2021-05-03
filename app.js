@@ -26,19 +26,22 @@ app.get("/", (req, res) => {
 
 	for(var a in req.query) {
 		if(req.query.hasOwnProperty(a)) {
-			var val = fn(a, req.query[a]);
+			var val = parser(a, req.query[a]);
 			if(val) list.push(val);
 		}
 	}
-
-	res.render("view", {name: fullName, description: description, links: list});
+	res.render("public/view", {name: fullName, description: description, links: list});
 });
+
+app.get("/gen", (req, res) => {
+	res.sendFile("gen.html",{ root: path.join(__dirname, './public') });
+})
 
 // listening on port 3000
 var port = process.env.PORT || 3000;
 app.listen(port, () => console.log(`server started on port ${port}.`));
 
-function fn(tag, data) {
+function parser(tag, data) {
 
 	switch (tag) {
 		case "fbi": return {name: "Facebook Profile", image: "facebook", url: `facebook.com/profile.php?id=${data}`}; // Facebook Id

@@ -4,7 +4,7 @@
   <p align="center">
     EasyTree 🌴 is a <a href="https://linktr.ee/">Linktree</a> like app for social links
     <br />
-    <a href="">View Demo</a>
+    <a href="https://easytree.herokuapp.com">View Demo</a>
     ·
     <a href="https://github.com/captainAyan/easytree/issues">Report Bug 😓</a>
   </p>

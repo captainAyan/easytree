@@ -4,7 +4,7 @@
   <p align="center">
     EasyTree 🌴 is a <a href="https://linktr.ee/">Linktree</a> like app for social links
     <br />
-    <a href="https://easytree.herokuapp.com">View Demo</a>
+    <a href="https://easytree.herokuapp.com">View Demo 🚧</a>
     ·
     <a href="https://github.com/captainAyan/easytree/issues">Report Bug 😓</a>
   </p>
@@ -14,6 +14,8 @@
 
 EasyTree is a Linktree like app for social links, but without storing them in a database. Instead
 you generate a url using our generator. The url contains all the values in the query parameters.
+
+🚧 The heorku deployment is not currently available.
 
 ## Getting Started
 _Coming soon_ 😁😁

@@ -15,7 +15,7 @@
 EasyTree is a Linktree like app for social links, but without storing them in a database. Instead
 you generate a url using our generator. The url contains all the values in the query parameters.
 
-🚧 The heorku deployment is not currently available.
+🚧 The heroku deployment is not currently available.
 
 ## Getting Started
 _Coming soon_ 😁😁
